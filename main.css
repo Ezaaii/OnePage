@@ -1,0 +1,331 @@
+/*VERSION PC*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121317;
+  background-image: url(/home/user/projets_perso/Portfolio_alice/img/1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+.nav {
+  display: block;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #7D7BD1;
+}
+.profile {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 250px;
+  width: 250px;
+  border-radius: 150px;
+  background-image: url(/home/user/projets_perso/Portfolio_alice/img/Alice_Worth.jpg);
+  background-size: cover;
+  background-color: white;
+}
+.nav h1 {
+  font-size: 55px;
+  font-family: arial;
+  margin-left: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.nav h2 span {
+  font-size: 75px;
+  line-height: 44px;
+}
+.boutons {
+  display: block;
+  margin-left: -10px;
+  width: 315px;
+  margin-bottom: 4px;
+}
+.button {
+  display: block;
+  margin: 0 auto;
+  background-color: #54538C;
+  height: 50px;
+  border-bottom: 2px solid #434370;
+  padding-top: 25px;
+  color: #fff;
+  font-size: 25px;
+  font-family: arial;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #434370;
+  transform: translateX(10px);
+  animation-duration: 2s;
+}
+.button:active {
+  background-color: #434370;
+}
+.nav .links{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 45px;
+}
+.nav .links i{
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  float: left;
+  text-decoration: none;
+  color: #54538C;
+  margin-right: 15px;
+}
+.links i:hover{
+  color: #434370;
+}
+main{
+  margin-left: 300px;
+  width: 1540px;
+  height: 100%;
+}
+#Accueil{
+  display: block;
+  height: inherit;
+  width: 100%;
+  padding-bottom: 30px;
+  background-color: rgba(256,256,256,1);
+
+}
+#Portfolio{
+  display: block;
+  height: inherit;
+  width: 100%;
+  padding-bottom: 30px;
+  background-color: rgba(256,256,256,0.03);
+  border-radius: 15px;
+  background: -webkit-linear-gradient(top,rgba(256,256,256,0.03) 0,rgba(190,190,190,.15) 90%);
+
+}
+#Contact{
+  display: block;
+  height: inherit;
+  width: 100%;
+  padding-bottom: 30px;
+  background-color: #fff;
+
+}
+.content{
+  display: block;
+  margin: 0 auto;
+  width: 93%;
+  padding-top: 15px;
+  font-family: Arial;
+}
+.content h2 span{
+  font-style: italic;
+  color: #666666;
+}
+#Portfolio .content h2{
+  color: white;
+}
+#Portfolio .content span{
+  color: white;
+}
+.flex{
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.flex .txt{
+  display: block;
+  margin-right: 30px;
+  width: 500px;
+  height: inherit;
+  text-align: justify;
+  font-size: 20px;
+}
+.flex .img{
+  display: block;
+  height: 500px;
+  width: 500px;
+  background-color: lightgrey;
+}
+.flex .slide{
+  height: 250px;
+  width: 100%;
+  background-color: lightgrey;
+}
+.txt .links{
+  display: flex;
+  flex-direction: column;
+}
+.txt .links span{
+  font-family: arial;
+  font-size:40px;
+}
+#Contact .blocs .content .flex .txt .links a{
+  float: left;
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
+  color: #999999;
+}
+/*hauteur mini*/
+@media only screen and (max-height: 700px){
+  .profile {
+    margin: inherit;
+    margin-top: 0px;
+    height: 250px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .nav h1 {
+    font-size: 35px;
+    font-family: arial;
+    margin-left: 15px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .nav h1 span {
+    font-size: 55px;
+    line-height: 44px;
+  }
+  .boutons {
+    display: block;
+    margin-left: -10px;
+    width: 315px;
+    margin-bottom: 4px;
+  }
+  .button {
+    display: block;
+    margin: 0 auto;
+    background-color: #54538C;
+    height: 30px;
+    border-bottom: 2px solid #434370;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-family: arial;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .nav .links{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 45px;
+    text-align: center;
+  }
+  .nav .links i{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    float: left;
+    text-decoration: none;
+    color: #54538C;
+    margin-right: 15px;
+    font-size: 350%;
+  }
+  .links i:hover{
+    color: #434370;
+  }
+}
+/*VERSION SMARTPHONE*/
+@media only screen and (max-width: 768px) {
+  .nav{
+    width: 100%;
+    height: 100px;
+  }
+  .profile {
+    margin-top: 0px;
+    height:10%;
+    width:100%;
+    background-image: url();
+    background-color: rgba(0,0,0,0);
+  }
+  .nav h1 {
+    margin: 0 auto;
+    float: left;
+    font-size: 35px;
+    font-family: arial;
+    margin-left: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    width: 25%;
+  }
+  .nav h1 span {
+    font-size: 55px;
+    line-height: 0px;
+  }
+  .boutons {
+    margin-left: 0px;
+    float: right;
+    width: 00%;
+    height: 110px;
+    margin-bottom: 0px;
+    margin-top: -30px;
+    padding-top: 20px;
+  }
+  .button {
+    height: 105px;
+    width: 32%;
+    opacity: 0;
+  }
+  .button:hover {
+    background-color: #434370;
+    transform: translateX(0px);
+    animation-duration: 0s;
+  }
+  .button:active {
+    background-color: #434370;
+  }
+  .nav .links{
+    display: block;
+    float: right;
+    margin: 0 auto;
+    width: 40%;
+    padding-left: 45px;
+  }
+  .nav .links i{
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px;
+    float: left;
+    text-decoration: none;
+    color: #54538C;
+    margin-right: 15px;
+    font-size: 430%;
+    width: 25%;
+  }
+  .links i:hover{
+    color: #434370;
+  }
+  main{
+    padding-top: 100px;
+    margin-left:0px;
+    width: 100%;
+    height: 100%;
+  }
+  .flex{
+    width: 100%;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .flex .txt{
+    display: block;
+    margin-right: 30px;
+    width: 100%;
+    height: inherit;
+    text-align: justify;
+    font-size: 20px;
+  }
+  .flex .img{
+    display: block;
+    height: 500px;
+    width: 100%;
+    background-color: lightgrey;
+  }
+}
