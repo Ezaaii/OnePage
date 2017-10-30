@@ -80,6 +80,7 @@ body {
   text-decoration: none;
   color: #54538C;
   margin-right: 15px;
+  cursor: pointer;
 }
 .links i:hover{
   color: #434370;
@@ -137,7 +138,7 @@ main{
   margin-left: 50px;
   margin-right: 50px;
 }
-.flex .txt{
+.txt{
   display: block;
   margin-right: 30px;
   width: 500px;
@@ -159,6 +160,7 @@ main{
 .txt .links{
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .txt .links span{
   font-family: arial;
